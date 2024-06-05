@@ -7,10 +7,10 @@ $mail = new PHPMailer();
 
 //$mail->SMTPDebug = 3; // Enable verbose debug output
 $mail->isSMTP(); // Set mailer to use SMTP
-$mail->Host = 'steelthemes.com'; // Specify main and backup SMTP servers
+$mail->Host = 'mail.apexmedtransport.com '; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'cform@steelthemes.com'; // SMTP username
-$mail->Password = 'AsDf12**'; // SMTP password
+$mail->Username = 'info@apexmedtransport.com'; // SMTP username
+$mail->Password = "tSdy-vG@9%'8%tT"; // SMTP password
 $mail->SMTPSecure = true; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to
 
@@ -30,8 +30,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
  $botcheck = $_POST['form_botcheck'];
 
- $toemail = 'templatecform@gmail.com'; // Your Email Address
- $toname = 'template_path'; // Your Name
+ $toemail = 'info@apexmedtransport.com'; // Your Email Address
+ $toname = 'Apex Medical Transport  '; // Your Name
 
  if( $botcheck == '' ) {
 

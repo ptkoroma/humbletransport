@@ -22,7 +22,8 @@
     --thm-font: 'Kumbh Sans', sans-serif;
     --thm-gray: #797989;
     --thm-gray-rgb: 121, 121, 137;
-    --thm-primary: #001789;
+    --thm-primary: #05629b;
+    --thm-hover: #00157c;
     --thm-primary-rgb: 0, 23, 137;
     --thm-black: #000000;
     --thm-black-rgb: 0, 0, 0;
@@ -266,7 +267,7 @@ li {
     border-radius: 30px;
     webkit-transition-duration: 800ms;
     transition-duration: 800ms;
-    background-color: var(--thm-primary);
+    background-color: var(--thm-hover);
     z-index: 2;
 }
 
