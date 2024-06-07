@@ -357,9 +357,9 @@ li {
 }
 
 
-
-
-
+.breadcrumb-area-bg.error {
+    background-position: center -300px;
+  }
 
 
 
