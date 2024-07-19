@@ -9,8 +9,8 @@ $mail = new PHPMailer();
 $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host = 'mail.apexmedtransport.com '; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'info@apexmedtransport.com'; // SMTP username
-$mail->Password = "tSdy-vG@9%'8%tT"; // SMTP password
+$mail->Username = 'reservations@apexmedtransport.com'; // SMTP username
+$mail->Password = "m_?3fHK7346Z"; // SMTP password
 $mail->SMTPSecure = true; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to
 
@@ -30,7 +30,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
  $botcheck = $_POST['form_botcheck'];
 
- $toemail = 'info@apexmedtransport.com'; // Your Email Address
+ $toemail = 'reservations@apexmedtransport.com'; // Your Email Address
  $toname = 'Apex Medical Transport  '; // Your Name
 
  if( $botcheck == '' ) {

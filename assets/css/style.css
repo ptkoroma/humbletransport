@@ -350,6 +350,10 @@ li {
     transform: scale(1.1);
 }
 
+.slogan-btn-box .btn-one {
+    border: solid;
+  }
+
 .btn-two:hover:before {}
 
 .btn-two:hover {
