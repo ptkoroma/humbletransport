@@ -313,11 +313,58 @@
         <!--End breadcrumb area-->
 
         <!--Start Error Page Area-->
+        <!-- <script>
+            fetch('https://newsapi.org/v2/everything?q=sierra-leone&from=2024-07-23&language=en&sortBy=publishedAt&apiKey=becb17c05def40449442c27e24312d69')                   
+                .then(res => {
+                    return res.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    let errorList = document.querySelector('.error-list');
+                    data.articles.forEach(article => {
+                        let li = document.createElement('a');
+                        li.innerHTML = article.title + ' <br> ';
+                        li.href = article.url;
+                        errorList.appendChild(li);
+                    })          
+                    
+                })  
+        </script> -->
+        
+        <script>
+            const options = {
+                method: 'GET',
+                headers: {
+                    accept: 'application/json',
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZDE2ZmExYTgwYjBmZTNjOTU4ZTdiZWFkZTkzN2E1YiIsIm5iZiI6MTcyMTgzNjQzOC42Mjk2MTMsInN1YiI6IjY2YTAyZDY4N2Q5ZjI5M2FiYTI4YWFhZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.A_PY6aAQkfusjOTjsfH3Fb2XVcfWCKwH6llucjznDCE'
+                }
+                };
+
+                fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    let errorList = document.querySelector('.error-list');
+                    data.results.forEach(movie => {
+                        let li = document.createElement('a');
+                        li.innerHTML = movie.title + ' <br> ' + movie.poster_path + ' <br> '; 
+                        <Image src="https://image.tmdb.org/t/p/w500"/>   
+                        li.href = 'https://www.themoviedb.org/movie/' + movie.id;
+                        errorList.appendChild(li);
+                    })          
+                    
+                })          
+                
+        </script>
+
         <section class="error-page-area">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="error-content text-center">
+                            <ul>
+                                <a class="error-list"> </a>
+                            </ul>
                             <div class="big-title wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1500ms">
                                 <h2>Oh...ho...</h2>
                             </div>

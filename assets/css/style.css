@@ -411,6 +411,14 @@ li {
     transition: all 300ms ease;
 }
 
+
+/* .error-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+}; */
+
 .checked-box1 label span:before {
     position: absolute;
     top: 0px;
